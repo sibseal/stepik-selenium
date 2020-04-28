@@ -1,6 +1,5 @@
 # https://stepik.org/lesson/228249/step/6?unit=200781
 from selenium import webdriver
-from selenium.webdriver.support.ui import Select
 import time
 import math
 
@@ -22,7 +21,7 @@ try:
 
     checkbox = browser.find_element_by_id("robotCheckbox")
     radio = browser.find_element_by_id("robotsRule")
-    submit = browser.find_element_by_css_selector("[type="submit"]")
+    submit = browser.find_element_by_css_selector("[type=\"submit\"]")
 
 
     browser.execute_script("window.scrollBy(0, 100);", checkbox)
